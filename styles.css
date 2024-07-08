@@ -1,0 +1,69 @@
+.question {
+    margin-bottom: 20px;
+    font-family: "Montserrat";
+}
+body {
+    padding: 10px 300px;
+}
+.choices {
+    list-style-type: none;
+    padding: 0;
+}
+.choices li {
+    margin-bottom: 10px;
+}
+/* Стили для модального окна */
+.modal {
+    display: none; /* Скрываем окно по умолчанию */
+    position: fixed; /* Фиксируем позицию на экране */
+    z-index: 1; /* Располагаем окно над всем содержимым */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Включаем прокрутку, если контент превышает высоту окна */
+    background-color: rgba(0, 0, 0, 0.4); /* Полупрозрачный черный фон */
+}
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 100%;
+    max-width: 730px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.correct-answer {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+button {
+    font-family: "Montserrat";
+    background-color: black;
+    color: white;
+    padding: 5px 30px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+#quiz-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#result {
+    font-family: "Montserrat";
+    font-size: 30px;
+}
